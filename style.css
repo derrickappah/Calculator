@@ -1,0 +1,143 @@
+/* Custom styles for the calculator */
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: max(884px, 100dvh);
+    overflow: hidden;
+}
+
+.button-pressed {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+.scrollbar-hide {
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+#display, #expression {
+    line-height: 1;
+}
+
+.history-container {
+    position: relative;
+}
+
+.history-barrier {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+    z-index: 10;
+}
+
+.history-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.history-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.history-item {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.history-fade {
+    opacity: 0.6;
+}
+
+/* Light mode styles */
+.light-mode {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+}
+
+.light-mode .history-barrier {
+    background: linear-gradient(transparent, rgba(245, 245, 245, 0.8));
+}
+
+.light-mode #history {
+    color: #666;
+}
+
+.light-mode #expression {
+    color: #888;
+}
+
+.light-mode #display {
+    color: #333;
+}
+
+.light-mode .history-item {
+    color: #333;
+}
+
+.light-mode .history-item:hover {
+    background-color: #e5e5e5;
+}
+
+.light-mode .history-item .text-gray-500 {
+    color: #666 !important;
+}
+
+.light-mode .history-item .text-white {
+    color: #333 !important;
+}
+
+.light-mode .calc-btn.bg-gray-400 {
+    background-color: #d1d5db;
+    color: #374151;
+}
+
+.light-mode .calc-btn.bg-gray-400:hover {
+    background-color: #9ca3af;
+}
+
+.light-mode .calc-btn.bg-zinc-800 {
+    background-color: #ffffff;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+}
+
+.light-mode .calc-btn.bg-zinc-800:hover {
+    background-color: #f3f4f6;
+}
+
+.light-mode .calc-btn.bg-orange-500 {
+    background-color: #f97316;
+}
+
+.light-mode .calc-btn.bg-orange-500:hover {
+    background-color: #ea580c;
+}
+
+.light-mode .calc-btn.bg-white {
+    background-color: #f97316;
+    color: white;
+}
+
+.light-mode .calc-btn.bg-white:hover {
+    background-color: #ea580c;
+}
+
+.light-mode .theme-toggle-btn {
+    background-color: #374151;
+    color: white;
+}
+
+.light-mode .theme-toggle-btn:hover {
+    background-color: #4b5563;
+}
