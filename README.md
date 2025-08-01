@@ -12,6 +12,15 @@ A modern, responsive calculator built with HTML, CSS, and JavaScript.
 ## Demo
 [Live Demo](https://derrickappah.github.io/Calculator/)
 
+## Screenshots
+
+### Dark Mode
+![Calculator Dark Mode](screenshots/dark-mode.png)
+
+### Light Mode  
+![Calculator Light Mode](screenshots/light-mode.png)
+
+
 ## Technologies Used
 - HTML5
 - CSS3 (Tailwind CSS)
