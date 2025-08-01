@@ -10,7 +10,7 @@ A modern, responsive calculator built with HTML, CSS, and JavaScript.
 - 🎯 Input validation (prevents invalid operations)
 
 ## Demo
-[Live Demo](https://YOUR_USERNAME.github.io/calculator)
+[Live Demo](https://derrickappah.github.io/Calculator/)
 
 ## Technologies Used
 - HTML5
